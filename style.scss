@@ -5,6 +5,14 @@ $secondary-color:#223959;
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
 
+body{
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+h2{
+padding:30px;
+}
+
 
 //-------NAVIGATION
 #logo-mackinder {
@@ -31,7 +39,12 @@ padding: 20px;
     padding: 20px;
 }
 
-
+//-------TEAM
+.container-team img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
 //-------PHIOLSOPHY
 
