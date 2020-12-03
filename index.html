@@ -11,43 +11,40 @@
 <body>
 
     <!-- --------------------NAVIGATION------------------ -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex flex-column align-items- w-100">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Mackinder Hair's logo" id="logo-mackinder"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-around" id="navbarToggler">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRICES & PRODUCTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">EDUCATION</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BOOK ONLINE</a>
-              </li>
-          </ul>
-        </div>
-    </div>
-      </nav>
 
+
+    <div class="bg-light text-center d-none d-lg-block p-3"><img class="logo" style="height: 48px;" src="./img/mackinder-logo.svg" alt="#"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      <a class="navbar-brand d-lg-none" href="#"><img class="logo" style="height: 32px;" src="./img/mackinder-logo.svg" alt="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav d-lg-flex justify-content-around w-100">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Prices & Products<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" >Book Online</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
   <!-- --------------------HOME------------------ -->
-  <section class="home"></section>
-  <div class="container-fluid home">
-<h1>Welcome to Mackinder Hair!</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut accusamus debitis delectus, praesentium enim dolorem. Ad totam illum eius facilis.</p>
-<button class="home-btn-outline">VIEW PRICES</button>
-<button class="home-btn-full">BOOK ONLINE</button>
-  </div>
+  <section class="home">
+    <div class="overlay">
+      <h1 class="display-2 text-white">Welcome to Mackinder Hair</h1>
+    </div>
+  </section>
+
 </section>
 
 
