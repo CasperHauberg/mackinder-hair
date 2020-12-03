@@ -6,6 +6,7 @@
     <title>Mackinder Hair Salon</title>
     <link rel="stylesheet" href="style.scss">
     <script defer src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2bb3f1dfbb.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -50,6 +51,18 @@
 
  <!-- --------------------PRICES AND PRODUCTS------------------ -->
   <!-- --------------------ABOUT------------------ --> 
+  <div class="container">
+<h2>OUR TEAM</h2>
+<div class="container-team">
+  <img src="./img/stephen.jpg" alt="">
+  <p>Stephen Mackinder</p>
+</div>
+<div class="container-team">
+  <img src="./img/pia.jpg" alt="">
+  <p>Pia Jensen</p>
+</div>
+</div>
+
  <!-- --------------------PHILOSOPHY------------------ -->
  <div classW="container"></div>
  <div class="row no-gutters">
@@ -86,14 +99,56 @@
  </div>
 
 
- 
+
   <!-- --------------------CONTACT------------------ -->
-  <div class="container-header">
+  <div class="container-fluid container-header">
 <img src="./img/header.jpg" alt="">
  <h1 class="contact-header">Get In Touch</h1>
 </div>
+<div class="container">
+  <div class="row">
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="inputFirstName">First name</label>
+      <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputLastName">Last Name</label>
+      <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail">E-mail</label>
+    <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com">
+  </div>
+  <div class="form-group">
+    <label for="inputMessage">Message</label>
+    <input type="text" class="form-control" id="inputMessage" placeholder="How can we help you?">
+  </div>
+  <button type="submit" class="btn-submit col-md-6">SEND</button>
+</form>
+<div class="col-3">
+<h2>Opening hours</h2>
+<p>Monday: CLOSED</p>
+<p>Tuesday: 10:00-17:30</p>
+<p>Wednesday: 10:00-17:30</p>
+<p>Thursday: 10:00-19:00</p>
+<p>Friday: 10:00-17:30</p>
+<p>Saturday: 9:30-15:00</p>
+<p>Sunday: CLOSED
 
-
-    
+<h3>Social Media</h3>
+<i class="fab fa-facebook-square fa-3x"></i>
+<i class="fab fa-instagram fa-3x"></i>
+</div>
+<div class="col-3">
+<h2>Contact information</h2>
+<p><i class="fas fa-map-marker-alt"></i>Skoubogade 2, 1st Floor, 1158 Copenhagen K</p>
+<p><i class="fas fa-phone"></i>+ 45 33 12 36 12</p>
+<p><i class="fas fa-envelope"></i>salon@mackinder.dk</p>
+</div>
+</div>
+</div> 
 </body>
 </html>
