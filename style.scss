@@ -1,0 +1,62 @@
+$primary-color:#F5F5F5;
+$secondary-color:#223959;
+
+
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+
+
+//-------NAVIGATION
+#logo-mackinder {
+padding: 25px;
+height: 90px;
+width: auto;
+}
+
+//-------HOME
+.container-fluid.home{
+    background-image: url('./img/home.jpg');
+    height: 100%;
+    color:$primary-color;
+}
+
+.home-btn-outline{
+background-color: transparent;
+border: 3px solid $primary-color;
+border-radius: 10px;  
+padding: 20px;  
+}
+.home-btn-full{
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: 3px solid $secondary-color;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+
+//-------PHIOLSOPHY
+
+.philo-blue{
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 20px solid #223959;
+    padding:100px;
+}
+.philo-white{
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: 20px solid #F5F5F5;
+    padding: 100px;
+}
+
+
+//-------CONTACT
+.contact-header{
+   position: absolute;
+   background-color: $secondary-color;
+}
+
+
+
+
