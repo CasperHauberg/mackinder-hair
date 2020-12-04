@@ -4,46 +4,50 @@ $secondary-color:#223959;
 
 
 @import './node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 body{
     background-color: $primary-color;
     color: $secondary-color;
+    font-family: 'Raleway', sans-serif;
 }
 h2{
-padding:30px;
+margin:60px;
 }
 
 
 //-------NAVIGATION
-#logo-mackinder {
-padding: 25px;
-height: 90px;
-width: auto;
-}
+// .nav-link {
+//     color: rgba($secondary-color, 0.9) !important;
+//   }
 
 //-------HOME
-.container-fluid.home{
-    background-image: url('./img/home.jpg');
-    color:$primary-color;
-}
-
-.home-btn-outline{
-background-color: transparent;
-border: 3px solid $primary-color; 
-padding: 20px;  
-}
-.home-btn-full{
-    background-color: $primary-color;
-    color: $secondary-color;
-    border: 3px solid $secondary-color;
-    padding: 20px;
-}
+.home {
+    width: 100%;
+    height: 100vh;
+    background: url("./img/home.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($secondary-color, $alpha: 0.6);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 //-------TEAM
 .container-team img{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+}
+.team-description{
+    margin:50px;
 }
 
 //-------PHIOLSOPHY
@@ -62,19 +66,50 @@ padding: 20px;
 }
 
 
+//-------PRICES
+
+a#cuts-tab.nav-link.active, a#coloring-tab.nav-link.active, a#treatment-tab.nav-link.active{
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+a#cuts-tab.nav-link, a#coloring-tab.nav-link, a#treatment-tab.nav-link {
+    background-color: $primary-color;
+    color: $secondary-color;
+}
+.nav-tabs{
+    border-bottom: 2px solid $secondary-color;
+}
+.tab-pane{
+margin: 30px;
+border-bottom: 2px solid $secondary-color;
+}
+.tab-content{
+    height: 300px;
+}
+
+#gift{
+    font-style: italic;
+}
+
+//-------PRODUCTS
+.product-header, .contact-header{
+    width: 100%;
+    height: 100px;
+    background-size: auto;
+    position: relative;}
+.product-header.wella{
+        background: url("./img/header1.png") center no-repeat;
+    }
+.product-header.davines{
+        background: url("./img/header2.jpg") center no-repeat;
+    }
+.product-header.sassoon{
+        background: url("./img/header3.jpg") center no-repeat;
+    }
+
 //-------CONTACT
-.container-header{
-    position: relative;
-    text-align: center;
-}
-img.contact-header {
-    width:100%;
-    height:30px;
-}
 .contact-header{
-    position: absolute;
-    top:10px;
-    left:10px;
+    background: url("./img/header.jpg") center no-repeat;
 }
 
 form{

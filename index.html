@@ -10,79 +10,221 @@
 </head>
 <body>
 
-    <!-- --------------------NAVIGATION------------------ -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex flex-column align-items- w-100">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Mackinder Hair's logo" id="logo-mackinder"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse justify-content-around" id="navbarToggler">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">PRICES & PRODUCTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">EDUCATION</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">BOOK ONLINE</a>
-              </li>
-          </ul>
-        </div>
+  <div class="bg-light text-center d-none d-lg-block p-3"><img class="logo" style="height: 48px;" src="./img/mackinder-logo.svg" alt="#"></div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <a class="navbar-brand d-lg-none" href="#"><img class="logo" style="height: 32px;" src="./img/mackinder-logo.svg" alt="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav d-lg-flex justify-content-around w-100">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Prices & Products<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" >Book Online</a>
+        </li>
+      </ul>
     </div>
-      </nav>
-
-  <!-- --------------------HOME------------------ -->
-  <section class="home"></section>
-  <div class="container-fluid home">
-<h1>Welcome to Mackinder Hair!</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut accusamus debitis delectus, praesentium enim dolorem. Ad totam illum eius facilis.</p>
-<button class="home-btn-outline">VIEW PRICES</button>
-<button class="home-btn-full">BOOK ONLINE</button>
+  </nav>
+  
+<!-- --------------------HOME------------------ -->
+<section class="home">
+  <div class="overlay">
+    <h1 class="display-2 text-white">Welcome to Mackinder Hair</h1>
   </div>
 </section>
 
 
 
  <!-- --------------------PRICES AND PRODUCTS------------------ -->
+ <section class="price">
+ <h2 class="text-center">Prices & Services</h2>
+ <div class="container col-md-6 col-sm-12">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="cuts-tab" data-toggle="tab" href="#cuts" role="tab" aria-controls="cuts" aria-selected="true">Cuts</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="coloring-tab" data-toggle="tab" href="#coloring" role="tab" aria-controls="coloring" aria-selected="false">Coloring</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="treatment-tab" data-toggle="tab" href="#treatment" role="tab" aria-controls="treatment" aria-selected="false">Treatment</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="cuts" role="tabpanel" aria-labelledby="cuts-tab">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Ladie's</th>
+            <th scope="col">Men's</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Stephen</th>
+            <td>700 kr</td>
+            <td>700 KR</td>
+          </tr>
+          <tr>
+            <th scope="row">Pia</th>
+            <td>700 kr</td>
+            <td>700 KR</td>
+          </tr>
+          <tr>
+            <th scope="row">Lela</th>
+            <td>700 kr</td>
+            <td>700 KR</td>
+          </tr>
+          <tr>
+            <th scope="row">Zee</th>
+            <td>700 kr</td>
+            <td>700 KR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="tab-pane fade" id="coloring" role="tabpanel" aria-labelledby="coloring-tab">
+      <p>There is a wide range of colour prices, depending on the technique required. Colour is very personal so if it’s your first visit here, a full consultation is recommended. We always feel that colour should enhance your haircut, both of them working in harmony.
+      </p>
+    </div>
+    <div class="tab-pane fade" id="treatment" role="tabpanel" aria-labelledby="treatment-tab">
+      ...
+    </div>
+  </div>
+  <p>Please note: Mackinder Hair only accept Dankort payments or cash (DKK) Payments.</p>
+  <p id="gift">Gift Certificates Available</p>
+</div>
+  </section>
+
+  
+  <section id="products">
+    <div class="container">
+        <h2 class="text-center">Products</h2>
+      <p class="text-center">Mackinder Hair has a wide variety of products purchasable at the salon.</p>
+      <div class="product-header wella">
+      <div class="overlay">
+      <h3 class="text-white">WELLA</h3>
+    </div>
+    </div>
+        <div class="row">
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+        </div>
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt=""  style="height: 120px;">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <p>WELLA - Styling Shampoo</p>
+        </div>
+      </div>
+      </div>
+    
+      <div class="product-header davines">
+        <div class="overlay">
+        <h3 class="text-white">DAVINES</h3>
+      </div>
+      </div>
+      <div class="product-header sassoon">
+        <div class="overlay">
+        <h3 class="text-white">SASSOON</h3>
+      </div>
+      </div>
+    </div>
+    </section>
   <!-- --------------------TEAM------------------ --> 
-<section class="team">
+<section id="team">
   <div class="container">
 <h2 class="text-center">The Mackinder Team</h2>
 <div class="row justify-content-between text-center">
-<div class="container-team">
+<div class="container-team col-md-3 col-sm-6">
   <img src="./img/stephen.jpg" alt="">
   <h4>Stephen Mackinder</h4>
 </div>
-<div class="container-team">
+<div class="container-team col-md-3 col-sm-6">
   <img src="./img/pia.jpg" alt="">
   <h4>Pia Jensen</h4>
 </div>
-<div class="container-team">
+<div class="container-team col-md-3 col-sm-6">
+  <img src="./img/stephen.jpg" alt="">
+  <h4>Stephen Mackinder</h4>
+  </div>
+<div class="container-team col-md-3 col-sm-6">
   <img src="./img/stephen.jpg" alt="">
   <h4>Stephen Mackinder</h4>
 </div>
-<div class="container-team">
-  <img src="./img/stephen.jpg" alt="">
-  <h4>Stephen Mackinder</h4>
+  </div>
+<div class="col-12">
+  <div class="team-description">
+    <p>Mackinder Hair has re-established itself as a salon in Copenhagen with an unequivocal Sassoon presence.
+      Along with Stephen, who had worked for 32 years Sassoons in London and Los Angeles, he now joined by Lela and Zee [PIA?].</p>
+      <p>Lela achieved her cosmology licence in Los Angels at the Vidal Sassoon School and has a remarkable talent in cutting hair the Sassoon way, carefree to wear and suitably beautiful.
+      </p><p>Zee has spent more than two years at Vidal Sassoon Schools in London and Los Angeles. He has spent time on various courses, hair cutting and colour, has a passion for creating breathtaking looks.
+      </p><p>Along with Lela and Zee, Pia who has now been at Mackinder Hair for six years has achieved her Master Colour at Wella, and she combines her wonderful colour techniques with great haircuts.
+      </p><p>To back all this up Tina Mackinder once a teacher at the Vidal Sassoon School in London joins this exciting team for dressing courses at Mackinder Hair.
+      If you want a great haircut or colour, there is no better place than Mackinder Hair. </p>
+    </div>
+  </div>
 </div>
-</div>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita fugit debitis sit impedit iusto blanditiis exercitationem maiores voluptatibus officia eligendi reiciendis delectus fugiat distinctio saepe, omnis doloribus, recusandae explicabo hic, voluptas id eius vel at? Est deserunt tenetur amet commodi architecto, dignissimos voluptate vero cupiditate voluptates similique voluptatum placeat corporis nulla sunt odio tempore? Repudiandae aspernatur quia obcaecati recusandae at aut voluptas ipsum distinctio exercitationem, natus repellendus ipsam sint quasi odio laudantium? Dolore rem laudantium mollitia est quisquam possimus dolorum et porro quod distinctio dignissimos aperiam, labore maxime dicta voluptate ipsa aliquid officia, voluptates, vitae iure suscipit cumque? Cupiditate, cum architecto placeat nihil, reiciendis eligendi tempora deleniti corrupti nostrum quidem totam deserunt ab laborum asperiores hic delectus minima blanditiis laudantium earum provident consectetur. Molestiae iure molestias veniam, quia nam facilis maiores illo, magni, autem unde quis minus ex praesentium nesciunt fugiat. Ducimus, dicta modi? Tenetur magni distinctio ipsum laborum, nesciunt repellat. Praesentium amet, rerum consequatur eos voluptate eaque sed accusamus modi soluta doloribus numquam veniam perferendis eveniet corporis dignissimos in magnam provident eum maxime voluptas sit? Tempore architecto minima aliquid assumenda, cupiditate magnam unde at veritatis laborum rem earum, aperiam corrupti suscipit dolorum veniam ducimus recusandae, quod maiores rerum itaque.</p>
 </div>
 </section>
 
 
-
  <!-- --------------------PHILOSOPHY------------------ -->
- <section class="philosophy">
+ <section id="philosophy">
  <div classW="container"></div>
  <div class="row no-gutters">
      <div class="col-md-6">
@@ -121,10 +263,11 @@
 
 
   <!-- --------------------CONTACT------------------ -->
-  <section class="contact">
-  <div class="container-fluid container-header">
-<img src="./img/header.jpg" alt="">
- <h2 class="contact-header">Get In Touch</h2>
+  <section id="contact">
+  <div class="contact-header">
+  <div class="overlay">
+ <h2 class="text-white">Get In Touch</h2>
+</div>
 </div>
 <div class="container">
   <div class="row">
