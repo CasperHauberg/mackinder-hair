@@ -12,31 +12,35 @@
 
     <!-- --------------------NAVIGATION------------------ -->
 
-
-    <div class="bg-light text-center d-none d-lg-block p-3"><img class="logo" style="height: 48px;" src="./img/mackinder-logo.svg" alt="#"></div>
+<section class="fixed-top shadow-sm">
+    <div class="border-bottom bg-light text-center d-none d-lg-block p-2"><img class="logo" style="height: 48px;" src="./img/mackinder-logo.svg" alt="#"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       
-      <a class="navbar-brand d-lg-none" href="#"><img class="logo" style="height: 32px;" src="./img/mackinder-logo.svg" alt="#"></a>
+      <a class="navbar-brand d-lg-none" href="#home"><img class="logo" style="height: 32px;" src="./img/mackinder-logo.svg" alt="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav d-lg-flex justify-content-around w-100">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Prices & Products<span class="sr-only">(current)</span></a>
+            <a class="nav-link main" href="#philosophy">Philosophy<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link main" href="#price">Prices & Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link main" href="https://mackindereducation.dk/" target="_blank">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" >Book Online</a>
+            <a class="nav-link main" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link main" href="http://www.jegvilbestilletid.dk/mackinder" >Book Online</a>
           </li>
         </ul>
       </div>
     </nav>
+  </section>
     
   <!-- --------------------HOME------------------ -->
   <section class="home">
@@ -50,7 +54,7 @@
 
 
  <!-- --------------------PRICES AND PRODUCTS------------------ -->
- <section class="price">
+ <section id="price">
  <h2 class="text-center">Prices & Services</h2>
  <div class="container col-md-6 col-sm-12">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -77,29 +81,42 @@
         <tbody>
           <tr>
             <th scope="row">Stephen</th>
-            <td>700 kr</td>
-            <td>700 KR</td>
+            <td>980 kr</td>
+            <td>880 KR</td>
           </tr>
           <tr>
             <th scope="row">Pia</th>
-            <td>700 kr</td>
-            <td>700 KR</td>
+            <td>820 kr</td>
+            <td>720 KR</td>
           </tr>
           <tr>
             <th scope="row">Lela</th>
-            <td>700 kr</td>
-            <td>700 KR</td>
+            <td>650 kr</td>
+            <td>550 KR</td>
           </tr>
           <tr>
             <th scope="row">Zee</th>
-            <td>700 kr</td>
-            <td>700 KR</td>
+            <td>650 kr</td>
+            <td>650 KR</td>
           </tr>
         </tbody>
       </table>
     </div>
     <div class="tab-pane fade" id="coloring" role="tabpanel" aria-labelledby="coloring-tab">
-      <p>There is a wide range of colour prices, depending on the technique required. Colour is very personal so if it’s your first visit here, a full consultation is recommended. We always feel that colour should enhance your haircut, both of them working in harmony.
+      <p>Prices for colouring hair can vary according to the technique used.
+        Techniques are determined by the following:
+        <ul>
+          <li>Lenght of hair</li>
+          <li>Type of haircut</li>
+          <li>Colour already in the hair</li>
+          <li>Condition of the hair</li>
+          <li>Hair texture</li>
+          <li>The desired effect you want</li>
+        </ul>
+      </p>
+      <p>Full consultation with a colourist always take place to ensure an agreement as to how the colouring will look.</p>
+      <p>You can come into the salon for a a consultation prior to an appointment being made. Due to the importance of these aspects with regard to colour, appointments cannot be booked online.
+        <p class="font-weight-bold">Thank you for your cooperation!</p>
       </p>
     </div>
     <div class="tab-pane fade" id="treatment" role="tabpanel" aria-labelledby="treatment-tab">
@@ -123,69 +140,161 @@
     </div>
         <div class="row">
         <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt="" style="height: 120px">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
         </div>
         <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt=""  style="height: 120px;">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
       </div>
       <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt="" style="height: 120px;">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
       </div>
       <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt="" style="height: 120px;">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
       </div>
       <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt="" style="height: 120px;">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
       </div>
       <div class="d-flex justify-content-around col-lg-3 col-sm-6">
-        <div class="product-container">
+        <div class="product-container text-center">
           <div class="thumbnail">
             <a href="./img/product.jpg">
               <img src="./img/product.jpg" alt="" style="height: 120px;">
             </div>
-            <p>WELLA - Styling Shampoo</p>
+            <h4>WELLA</h4>
+            <p>Styling Shampoo</p>
         </div>
       </div>
       </div>
     
+
+      
       <div class="product-header davines">
         <div class="overlay">
         <h3 class="text-white">DAVINES</h3>
       </div>
       </div>
+      <div class="row">
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+        </div>
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt=""  style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+      </div>
+      </div>
       <div class="product-header sassoon">
         <div class="overlay">
         <h3 class="text-white">SASSOON</h3>
+      </div>
+      </div>
+      <div class="row">
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+        </div>
+        <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt=""  style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-around col-lg-3 col-sm-6">
+        <div class="product-container text-center">
+          <div class="thumbnail">
+            <a href="./img/product.jpg">
+              <img src="./img/product.jpg" alt="" style="height: 120px;">
+            </div>
+            <h4>Davines</h4>
+            <p>Styling Shampoo</p>
+        </div>
       </div>
       </div>
     </div>
@@ -205,21 +314,23 @@
 </div>
 <div class="container-team col-md-3 col-sm-6">
   <img src="./img/stephen.jpg" alt="">
-  <h4>Stephen Mackinder</h4>
+  <h4>Zee</h4>
   </div>
 <div class="container-team col-md-3 col-sm-6">
   <img src="./img/stephen.jpg" alt="">
-  <h4>Stephen Mackinder</h4>
+  <h4>Lela</h4>
 </div>
   </div>
 <div class="col-12">
   <div class="team-description">
-    <p>Mackinder Hair has re-established itself as a salon in Copenhagen with an unequivocal Sassoon presence.
-      Along with Stephen, who had worked for 32 years Sassoons in London and Los Angeles, he now joined by Lela and Zee [PIA?].</p>
-      <p>Lela achieved her cosmology licence in Los Angels at the Vidal Sassoon School and has a remarkable talent in cutting hair the Sassoon way, carefree to wear and suitably beautiful.
-      </p><p>Zee has spent more than two years at Vidal Sassoon Schools in London and Los Angeles. He has spent time on various courses, hair cutting and colour, has a passion for creating breathtaking looks.
-      </p><p>Along with Lela and Zee, Pia who has now been at Mackinder Hair for six years has achieved her Master Colour at Wella, and she combines her wonderful colour techniques with great haircuts.
-      </p><p>To back all this up Tina Mackinder once a teacher at the Vidal Sassoon School in London joins this exciting team for dressing courses at Mackinder Hair.
+    <p>Mackinder Hair has re-established itself as a salon in Copenhagen with an unequivocal Sassoon presence.</p>
+    <p>Stephen worked for Vidal Sassoon for 32 years, both in London and Los Angeles, and still bases his cutting techniques on the ideals cutting hair the Sassoon way.</p>
+     <p>Pia who has now worked at Mackinder Hair for six years. She joined following a course she attended and was subsequently retrained for six months to ensure a high quality, both in cutting and colouring. She recently achieved her Master Colour Honour at Wellawhich she now combines with great haircuts.
+    </p>
+      <p>Along with Stephen and Pia, Mackinder Hair now has two more exciting talents, Lela and Zee.</p>
+      <p>Lela achieved her cosmotology licence at the Vidal Sassoon School in Los Angels and has a remarkable talent in haircutting, creating beautiful, easy to wear looks.
+      </p><p>Zee has spent more than two years at Vidal Sassoon Schools both in London and Los Angeles. He has achieved a high profile in cutting and colouring and has a passion for creating breathtaking looks.
+      </p><p>To back all this up, Tina Mackinder, a former Vidal Sassoon teacher, is still very much a part of the Mackinder educatioanl team. A true inspiration  joins this exciting team for dressing courses at Mackinder Hair.
       If you want a great haircut or colour, there is no better place than Mackinder Hair. </p>
     </div>
   </div>
@@ -230,7 +341,7 @@
 
  <!-- --------------------PHILOSOPHY------------------ -->
  <section id="philosophy">
- <div classW="container"></div>
+ <div class="container-fluid">
  <div class="row no-gutters">
      <div class="col-md-6">
          <div class="philo-blue">
@@ -268,57 +379,62 @@
 
 
   <!-- --------------------CONTACT------------------ -->
-  <section id="contact">
-  <div class="contact-header">
-  <div class="overlay">
- <h2 class="text-white">Get In Touch</h2>
-</div>
-</div>
-<div class="container">
-  <div class="row">
-<form>
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="inputFirstName">First name</label>
-      <input type="text" class="form-control" id="inputFirstName" placeholder="John">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputLastName">Last Name</label>
-      <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
-    </div>
+  <section id="contact" class="mt-5">
+    <div class="contact-header">
+    <div class="overlay">
+   <h2 class="text-white">Get In Touch</h2>
   </div>
-  <div class="form-group">
-    <label for="inputEmail">E-mail</label>
-    <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com">
   </div>
-  <div class="form-group">
-    <label for="inputMessage">Message</label>
-    <input type="text" class="form-control" id="inputMessage" placeholder="How can we help you?">
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <form class="rounded shadow mb-5">
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="inputFirstName">First name</label>
+              <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+            </div>
+            <div class="form-group col">
+              <label for="inputLastName">Last Name</label>
+              <input type="text" class="form-control" id="inputLastName" placeholder="Doe">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">E-mail</label>
+            <input type="text" class="form-control" id="inputEmail" placeholder="example@example.com">
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            
+            <textarea class="form-control"  rows="4" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-block">SEND</button>
+        </form>
+      </div>
+  
+  <div class="col-md-3">
+  <h3>Opening Hours</h3>
+  <p>Monday: CLOSED</p>
+  <p>Tuesday: 10:00-17:30</p>
+  <p>Wednesday: 10:00-17:30</p>
+  <p>Thursday: 10:00-19:00</p>
+  <p>Friday: 10:00-17:30</p>
+  <p>Saturday: 8:30-15:00</p>
+  <p>Sunday: CLOSED
   </div>
-  <button type="submit" class="btn-submit col-md-6">SEND</button>
-</form>
-<div class="col-3">
-<h3>Opening Hours</h3>
-<p>Monday: CLOSED</p>
-<p>Tuesday: 10:00-17:30</p>
-<p>Wednesday: 10:00-17:30</p>
-<p>Thursday: 10:00-19:00</p>
-<p>Friday: 10:00-17:30</p>
-<p>Saturday: 9:30-15:00</p>
-<p>Sunday: CLOSED
-
-<h4>Social Media</h4>
-<i class="fab fa-facebook-square fa-3x"></i>
-<i class="fab fa-instagram fa-3x"></i>
+  <div class="col-md-3">
+  <h3>Contact Information</h3>
+  <p><i class="fas fa-map-marker-alt"></i>Skoubogade 2, 1st Floor, 1158 Copenhagen K</p>
+  <p><i class="fas fa-phone"></i>+ 45 33 12 36 12</p>
+  <p><i class="fas fa-envelope"></i>salon@mackinder.dk</p>
+  <h4 id="contact-some">Social Media</h4>
+  <div class="some-container">
+  <a href="https://www.facebook.com/Mackinder-152523561475307" class="text-center" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
+  <a href="https://www.instagram.com/mackinderhair/" class="text-center" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
 </div>
-<div class="col-3">
-<h3>Contact Information</h3>
-<p><i class="fas fa-map-marker-alt"></i>Skoubogade 2, 1st Floor, 1158 Copenhagen K</p>
-<p><i class="fas fa-phone"></i>+ 45 33 12 36 12</p>
-<p><i class="fas fa-envelope"></i>salon@mackinder.dk</p>
-</div>
-</div>
-</div> 
-</section>
+  </div>
+  </div>
+  </div> 
+  </section>
 </body>
 </html>
