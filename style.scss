@@ -1,167 +1,189 @@
-$primary-color:#F5F5F5;
-$secondary-color:#223959;
+$primary: #223959; // f5f5f5
+$secondary-color: #f5f5f5; // 223959
 
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-
-@import './node_modules/bootstrap/scss/bootstrap.scss';
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
-
-html {
-    scroll-behavior: smooth;
-  }
-body{
-    background-color: $primary-color;
-    color: $secondary-color;
-    font-family: 'Raleway', sans-serif;
+a html {
+  scroll-behavior: smooth;
 }
-h2{
-margin:60px;
+body {
+  background-color: $secondary-color;
+  color: $primary;
+  font-family: "Raleway", sans-serif;
 }
-
+h2 {
+  margin: 60px;
+}
 
 //-------NAVIGATION
-a.nav-link.main{
--webkit-transition: transform 0.4s ease-out;
+a.nav-link.main {
+  -webkit-transition: transform 0.4s ease-out;
   -moz-transition: transform 0.4s ease-out;
   -o-transition: transform 0.4s ease-out;
   transition: transform 0.4s ease-out;
 }
-a.nav-link.main:hover{
--webkit-transform: scale(1.3);
+a.nav-link.main:hover {
+  -webkit-transform: scale(1.3);
 }
-
 
 //-------HOME
 .home {
-    width: 100%;
-    height: 100vh;
-    background: url("./img/home.jpg") center no-repeat;
-    background-size: cover;
-    position: relative;}
+  width: 100%;
+  height: 100vh;
+  background: url("./img/home.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 // h1{
 //     text-shadow: 2px 2px 5px black;
 // }
-  .overlay {
-    width: 100%;
-    height: 100%;
-    background-color: rgba($secondary-color, $alpha: 0.6);
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba($primary, $alpha: 0.6);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 //-------TEAM
-.container-team img{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+.persona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./img/stephen.jpg");
+  color: transparent;
+  background-size: 200px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
-.team-description{
-    margin:50px;
+
+.persona:hover {
+  background-image: none;
+  background-color: $primary;
+  color: white;
+}
+
+.team-description {
+  margin: 50px;
 }
 
 //-------PHIOLSOPHY
 
-.philo-blue{
-    background-color: $secondary-color;
-    color: $primary-color;
-    border: 20px solid #223959;
-    padding:100px;
-}
-.philo-white{
-    background-color: $primary-color;
-    color: $secondary-color;
-    border: 20px solid #F5F5F5;
-    padding: 100px;
+.philo {
+  height: 360px;
 }
 
+.blue {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 99, 134, 0.3);
+}
+
+// .philo-blue {
+//   background-color: $secondary-color;
+//   color: $primary-color;
+
+//   padding: 100px;
+// }
+// .philo-white {
+//   background-color: $primary-color;
+//   color: $secondary-color;
+
+//   padding: 100px;
+// }
 
 //-------PRICES
 
-a#cuts-tab.nav-link.active, a#coloring-tab.nav-link.active, a#treatment-tab.nav-link.active{
-    background-color: $secondary-color;
-    color: $primary-color;
+a#cuts-tab.nav-link.active,
+a#coloring-tab.nav-link.active,
+a#treatment-tab.nav-link.active {
+  background-color: $primary;
+  color: $secondary-color;
 }
-a#cuts-tab.nav-link, a#coloring-tab.nav-link, a#treatment-tab.nav-link {
-    background-color: $primary-color;
-    color: $secondary-color;
+a#cuts-tab.nav-link,
+a#coloring-tab.nav-link,
+a#treatment-tab.nav-link {
+  background-color: $secondary-color;
+  color: $primary;
 }
-.nav-tabs{
-    border-bottom: 2px solid $secondary-color;
+.nav-tabs {
+  border-bottom: 2px solid $primary;
 }
-.tab-pane{
-margin: 30px;
-border-bottom: 2px solid $secondary-color;
+.tab-pane {
+  margin: 30px;
+  border-bottom: 2px solid $primary;
 }
 
-#gift{
-    font-style: italic;
+#gift {
+  font-style: italic;
 }
 
 //-------PRODUCTS
-.product-header, .contact-header{
-    width: 100%;
-    height: 70px;
-    background-size: auto;
-    position: relative;
-margin-bottom:40px;
-text-shadow: 2px 2px 5px black;
+.product-header,
+.contact-header {
+  width: 100%;
+  height: 70px;
+  background-size: auto;
+  position: relative;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 5px black;
 }
-.product-header.wella{
-        background: url("./img/header1.png") center no-repeat;
-    }
-.product-header.davines{
-        background: url("./img/header2.jpg") center no-repeat;
-    }
-.product-header.sassoon{
-        background: url("./img/header3.jpg") center no-repeat;
-    }
-.thumbnail{
-        margin:20px;
-        box-shadow: 2px 2px 5px #cccccc;
-    }
+.product-header.wella {
+  background: url("./img/header1.png") center no-repeat;
+}
+.product-header.davines {
+  background: url("./img/header2.jpg") center no-repeat;
+}
+.product-header.sassoon {
+  background: url("./img/header3.jpg") center no-repeat;
+}
+.thumbnail {
+  margin: 20px;
+  box-shadow: 2px 2px 5px #cccccc;
+}
 
 //-------CONTACT
 .btn-secondary {
-    background-color: $secondary-color;
+  background-color: $secondary-color;
+}
+.contact-header {
+  background: url("./img/header.jpg") center no-repeat;
+}
+form {
+  background-color: white;
+  // border: 2px solid $secondary-color;
+  padding: 20px;
+  box-shadow: 2px 2px 2px black;
+}
+h3#contact {
+  margin-bottom: 30px;
+}
+#contact-some {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.some-container a {
+  color: $secondary-color;
+}
+
+i {
+  padding: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  a.nav-link.main {
+    -webkit-transition: transform 0.4s ease-in;
+    -moz-transition: transform 0.4s ease-in;
+    -o-transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
   }
-.contact-header{
-    background: url("./img/header.jpg") center no-repeat;
-}
-form{
-    background-color: white;
-    // border: 2px solid $secondary-color;
-    padding:20px;
-    box-shadow: 2px 2px 2px black;
-}
-h3#contact{
-    margin-bottom:30px;
-}
-#contact-some{
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.some-container a{
-    color:$secondary-color;
-}
-
-i{
-    padding:0px 10px 0px 10px;
-}
-
-
-@media screen and (max-width: 768px){
-    a.nav-link.main{
-        -webkit-transition: transform 0.4s ease-in;
-          -moz-transition: transform 0.4s ease-in;
-          -o-transition: transform 0.4s ease-in;
-          transition: transform 0.4s ease-in;
-        }
-    a.nav-link.main:hover{
-        -webkit-transform:$secondary-color;
-        font-weight: bold;
-        }  
+  a.nav-link.main:hover {
+    -webkit-transform: $secondary-color;
+    font-weight: bold;
+  }
 }
